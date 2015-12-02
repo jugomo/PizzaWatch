@@ -29,65 +29,75 @@ class SeleccionaIngredientesViewController: UIViewController {
     }
     
     @IBAction func selectedJamon(sender: UISwitch) {
-        if myPizza?.ingredientes == nil {
-            myPizza?.ingredientes = [String]()
+        if sender.on {
+            myPizza?.ingredientes[0] = Pizza.Ingredientes.jamon
+        } else {
+            myPizza?.ingredientes[0] = nil
         }
-        myPizza?.ingredientes?.append(Pizza.Ingredientes.jamon)
     }
     
     @IBAction func selectedPeperoni(sender: UISwitch) {
-        if myPizza?.ingredientes == nil {
-            myPizza?.ingredientes = [String]()
+        if sender.on {
+            myPizza?.ingredientes[1] = Pizza.Ingredientes.peperoni
+        } else {
+            myPizza?.ingredientes[1] = nil
         }
-        myPizza?.ingredientes?.append(Pizza.Ingredientes.peperoni)
     }
     
     @IBAction func selectedPavo(sender: UISwitch) {
-        if myPizza?.ingredientes == nil {
-            myPizza?.ingredientes = [String]()
+        if sender.on {
+            myPizza?.ingredientes[2] = Pizza.Ingredientes.pavo
+        } else {
+            myPizza?.ingredientes[2] = nil
         }
-        myPizza?.ingredientes?.append(Pizza.Ingredientes.pavo)
     }
     
     @IBAction func selectedSalchicha(sender: UISwitch) {
-        if myPizza?.ingredientes == nil {
-            myPizza?.ingredientes = [String]()
+        if sender.on {
+            myPizza?.ingredientes[3] = Pizza.Ingredientes.salchicha
+        } else {
+            myPizza?.ingredientes[3] = nil
         }
-        myPizza?.ingredientes?.append(Pizza.Ingredientes.salchicha)
     }
     
     @IBAction func selectedAceitunas(sender: UISwitch) {
-        if myPizza?.ingredientes == nil {
-            myPizza?.ingredientes = [String]()
+        if sender.on {
+            myPizza?.ingredientes[4] = Pizza.Ingredientes.aceituna
+        } else {
+            myPizza?.ingredientes[4] = nil
         }
-        myPizza?.ingredientes?.append(Pizza.Ingredientes.aceituna)
     }
     
     @IBAction func selectedCebolla(sender: UISwitch) {
-        if myPizza?.ingredientes == nil {
-            myPizza?.ingredientes = [String]()
+        if sender.on {
+            myPizza?.ingredientes[5] = Pizza.Ingredientes.cebolla
+        } else {
+            myPizza?.ingredientes[5] = nil
         }
-        myPizza?.ingredientes?.append(Pizza.Ingredientes.cebolla)
     }
     
     @IBAction func selectedPimiento(sender: UISwitch) {
-        if myPizza?.ingredientes == nil {
-            myPizza?.ingredientes = [String]()
+        if sender.on {
+            myPizza?.ingredientes[6] = Pizza.Ingredientes.pimiento
+        } else {
+            myPizza?.ingredientes[6] = nil
         }
     }
     
     @IBAction func selectedPiña(sender: UISwitch) {
-        if myPizza?.ingredientes == nil {
-            myPizza?.ingredientes = [String]()
+        if sender.on {
+            myPizza?.ingredientes[7] = Pizza.Ingredientes.piña
+        } else {
+            myPizza?.ingredientes[7] = nil
         }
-        myPizza?.ingredientes?.append(Pizza.Ingredientes.piña)
     }
     
     @IBAction func selectedZanahoria(sender: UISwitch) {
-        if myPizza?.ingredientes == nil {
-            myPizza?.ingredientes = [String]()
+        if sender.on {
+            myPizza?.ingredientes[8] = Pizza.Ingredientes.anchoa
+        } else {
+            myPizza?.ingredientes[8] = nil
         }
-        myPizza?.ingredientes?.append(Pizza.Ingredientes.anchoa)
     }
     
 }

@@ -26,6 +26,13 @@
 		43318FF21C0EFC77009AE30C /* SeleccionaQuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43318FEC1C0EFC77009AE30C /* SeleccionaQuesoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		43318FF31C0EFC77009AE30C /* SeleccionaTamanhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43318FED1C0EFC77009AE30C /* SeleccionaTamanhoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		43318FF51C0EFCAD009AE30C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43318FF41C0EFCAD009AE30C /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		43318FF81C0F2779009AE30C /* SelectSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43318FF71C0F2779009AE30C /* SelectSizeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		43318FFA1C0F2845009AE30C /* SelectDoughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43318FF91C0F2845009AE30C /* SelectDoughViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		43318FFC1C0F2886009AE30C /* SelectCheeseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43318FFB1C0F2886009AE30C /* SelectCheeseViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		43318FFE1C0F28C9009AE30C /* SelectAdmisturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43318FFD1C0F28C9009AE30C /* SelectAdmisturesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		433190001C0F28F1009AE30C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43318FFF1C0F28F1009AE30C /* InitialViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		433190011C0F2976009AE30C /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43318FE91C0EFC77009AE30C /* Pizza.swift */; settings = {ASSET_TAGS = (); }; };
+		433190031C0F2A98009AE30C /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433190021C0F2A98009AE30C /* FinalViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +111,12 @@
 		43318FEC1C0EFC77009AE30C /* SeleccionaQuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionaQuesoViewController.swift; sourceTree = "<group>"; };
 		43318FED1C0EFC77009AE30C /* SeleccionaTamanhoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionaTamanhoViewController.swift; sourceTree = "<group>"; };
 		43318FF41C0EFCAD009AE30C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		43318FF71C0F2779009AE30C /* SelectSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSizeViewController.swift; sourceTree = "<group>"; };
+		43318FF91C0F2845009AE30C /* SelectDoughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDoughViewController.swift; sourceTree = "<group>"; };
+		43318FFB1C0F2886009AE30C /* SelectCheeseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCheeseViewController.swift; sourceTree = "<group>"; };
+		43318FFD1C0F28C9009AE30C /* SelectAdmisturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAdmisturesViewController.swift; sourceTree = "<group>"; };
+		43318FFF1C0F28F1009AE30C /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		433190021C0F2A98009AE30C /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,12 +206,13 @@
 		43318FCC1C0EF23D009AE30C /* PizzaWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				43318FCF1C0EF23D009AE30C /* InterfaceController.swift */,
-				43318FD11C0EF23D009AE30C /* ExtensionDelegate.swift */,
-				43318FD31C0EF23D009AE30C /* NotificationController.swift */,
-				43318FD51C0EF23D009AE30C /* Assets.xcassets */,
-				43318FD71C0EF23D009AE30C /* Info.plist */,
 				43318FCD1C0EF23D009AE30C /* Supporting Files */,
+				43318FFF1C0F28F1009AE30C /* InitialViewController.swift */,
+				43318FF71C0F2779009AE30C /* SelectSizeViewController.swift */,
+				43318FF91C0F2845009AE30C /* SelectDoughViewController.swift */,
+				43318FFB1C0F2886009AE30C /* SelectCheeseViewController.swift */,
+				43318FFD1C0F28C9009AE30C /* SelectAdmisturesViewController.swift */,
+				433190021C0F2A98009AE30C /* FinalViewController.swift */,
 			);
 			path = "PizzaWatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -206,6 +220,11 @@
 		43318FCD1C0EF23D009AE30C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				43318FD51C0EF23D009AE30C /* Assets.xcassets */,
+				43318FD31C0EF23D009AE30C /* NotificationController.swift */,
+				43318FD11C0EF23D009AE30C /* ExtensionDelegate.swift */,
+				43318FCF1C0EF23D009AE30C /* InterfaceController.swift */,
+				43318FD71C0EF23D009AE30C /* Info.plist */,
 				43318FCE1C0EF23D009AE30C /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
@@ -398,9 +417,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43318FFC1C0F2886009AE30C /* SelectCheeseViewController.swift in Sources */,
+				43318FFA1C0F2845009AE30C /* SelectDoughViewController.swift in Sources */,
+				433190011C0F2976009AE30C /* Pizza.swift in Sources */,
+				43318FFE1C0F28C9009AE30C /* SelectAdmisturesViewController.swift in Sources */,
 				43318FD41C0EF23D009AE30C /* NotificationController.swift in Sources */,
+				433190031C0F2A98009AE30C /* FinalViewController.swift in Sources */,
 				43318FD21C0EF23D009AE30C /* ExtensionDelegate.swift in Sources */,
 				43318FD01C0EF23D009AE30C /* InterfaceController.swift in Sources */,
+				43318FF81C0F2779009AE30C /* SelectSizeViewController.swift in Sources */,
+				433190001C0F28F1009AE30C /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

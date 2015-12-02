@@ -48,6 +48,6 @@ class Pizza {
     var tamaño: Tam?
     var masa: Masa?
     var queso: Queso?
-    var ingredientes: [String]?
+    var ingredientes: [String?] = [nil,nil,nil,nil,nil,nil,nil,nil,nil]
     
 }

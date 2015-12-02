@@ -20,8 +20,8 @@ class ConfirmarViewController: UIViewController {
         lista = lista + "Masa: " + myPizza!.masa!.rawValue + "\n"
         lista = lista + "Queso: " + myPizza!.queso!.rawValue + "\n\n"
         lista = lista + "Ingredientes: \n"
-        for item in myPizza!.ingredientes! {
-            lista = lista + item + "\n"
+        for item in myPizza!.ingredientes {
+            lista = lista + item! + "\n"
         }
         
         verPedido.text = lista

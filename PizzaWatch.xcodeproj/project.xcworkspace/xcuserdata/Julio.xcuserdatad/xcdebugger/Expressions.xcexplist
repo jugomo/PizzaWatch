@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "SelectDoughViewController.awakeWithContext(AnyObject?) -&gt; ():SelectDoughViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Float(pizza.masa!.hashValue)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SelectCheeseViewController.awakeWithContext(AnyObject?) -&gt; ():SelectCheeseViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cheesePickerDataSource()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

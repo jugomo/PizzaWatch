@@ -36,12 +36,41 @@
                     <items>
                         <label alignment="left" text="Tipo de queso:" id="Za7-8b-1lv"/>
                         <separator alignment="left" id="Y8Z-k5-zDY"/>
-                        <picker width="1" height="100" alignment="left" id="tca-cI-nYW">
-                            <connections>
-                                <action selector="selectionCheese:" destination="rlF-nF-WF6" id="9El-Om-Vtp"/>
-                            </connections>
-                        </picker>
-                        <label alignment="center" text="Label" textAlignment="center" id="SpK-3z-Pxy"/>
+                        <group width="1" alignment="left" id="8Xy-Bu-XQ8">
+                            <items>
+                                <button width="0.5" alignment="left" title="Sin queso" id="rpi-1v-XlO">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="btnSinqueso" destination="rlF-nF-WF6" id="E65-B0-ssk"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Parmesano" id="UkO-Rs-Y5H">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="btnParmesano" destination="rlF-nF-WF6" id="Sgt-2N-U9A"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Qnc-2K-Rr8">
+                            <items>
+                                <button width="0.5" alignment="left" title="Mozarella" id="fII-Ng-ZsR">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="btnMozarella" destination="rlF-nF-WF6" id="raj-9g-kJr"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="Cheddar" id="bB8-wu-8yM">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="btnCheddar" destination="rlF-nF-WF6" id="3WH-dE-yDt"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label alignment="center" textAlignment="center" numberOfLines="3" id="SpK-3z-Pxy">
+                            <color key="textColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Continuar" id="Cua-Kq-MCd">
                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -50,12 +79,11 @@
                         </button>
                     </items>
                     <connections>
-                        <outlet property="cheesePicker" destination="tca-cI-nYW" id="T7l-jP-57Q"/>
                         <outlet property="quesoSelected" destination="SpK-3z-Pxy" id="50z-de-cen"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="260" y="348.5"/>
+            <point key="canvasLocation" x="260" y="332.5"/>
         </scene>
         <!--SelectAdmisturesViewController-->
         <scene sceneID="oGI-DL-x4k">
@@ -65,46 +93,55 @@
                         <label alignment="left" text="Ingredientes:" id="nh2-Jm-NP9"/>
                         <separator alignment="left" id="IzL-gA-gd2"/>
                         <switch width="1" alignment="left" title="jamon" id="1J6-34-HG6">
+                            <color key="tintColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="jamonSelected:" destination="brD-6f-K9l" id="iBA-hX-jrs"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="peperoni" id="y5V-Zv-VQc">
+                            <color key="tintColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="peperoniSelected:" destination="brD-6f-K9l" id="SDd-pP-zdx"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="pavo" id="DMX-tJ-QBt">
+                            <color key="tintColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="pavoSelected:" destination="brD-6f-K9l" id="kI1-lD-Xgy"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="salchicha" id="d10-oZ-BCC">
+                            <color key="tintColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="salchichaSelected:" destination="brD-6f-K9l" id="AAP-Wc-MkC"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="aceituna" id="NuR-Mm-w8t">
+                            <color key="tintColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="aceitunaSelected:" destination="brD-6f-K9l" id="tec-Yg-JjE"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="cebolla" id="DYu-Cw-f2d">
+                            <color key="tintColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cebollaSelected:" destination="brD-6f-K9l" id="1wJ-YV-vdz"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="pimiento" id="6WO-As-WDs">
+                            <color key="tintColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="pimientoSelected:" destination="brD-6f-K9l" id="ZvY-jT-kHS"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="piña" id="cM2-0B-Vbj">
+                            <color key="tintColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="piñaSelected:" destination="brD-6f-K9l" id="cJb-Rn-4kb"/>
                             </connections>
                         </switch>
                         <switch width="1" alignment="left" title="anchoa" id="SOi-bO-42B">
+                            <color key="tintColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="anchoaSelected:" destination="brD-6f-K9l" id="JYq-wf-Aje"/>
                             </connections>
@@ -116,33 +153,55 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="switchAceituna" destination="NuR-Mm-w8t" id="BQN-Tk-ckm"/>
+                        <outlet property="switchAnchoa" destination="SOi-bO-42B" id="4gI-xr-qy3"/>
+                        <outlet property="switchCebolla" destination="DYu-Cw-f2d" id="t5A-wm-Y72"/>
+                        <outlet property="switchJamon" destination="1J6-34-HG6" id="cX5-dq-Q6c"/>
+                        <outlet property="switchPavo" destination="DMX-tJ-QBt" id="VQt-5y-maR"/>
+                        <outlet property="switchPeperoni" destination="y5V-Zv-VQc" id="h3g-jt-YdA"/>
+                        <outlet property="switchPimiento" destination="6WO-As-WDs" id="TiN-nM-7HH"/>
+                        <outlet property="switchPiña" destination="cM2-0B-Vbj" id="VIK-BV-tzP"/>
+                        <outlet property="switchSalchicha" destination="d10-oZ-BCC" id="91j-yP-QGc"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="61" y="746.5"/>
+            <point key="canvasLocation" x="61" y="723.5"/>
         </scene>
         <!--FinalViewController-->
         <scene sceneID="4qU-CQ-Kap">
             <objects>
                 <controller identifier="FinalViewController" hidesWhenLoading="NO" id="pfW-BZ-V7k" customClass="FinalViewController" customModule="PizzaWatch_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="¿Confirma su pedido?" numberOfLines="2" id="Qyt-Cg-91G"/>
+                        <label alignment="left" text="Su Pizza:" id="ror-Am-PO4"/>
+                        <label alignment="left" text="Label" numberOfLines="18" id="odC-Zg-yGu">
+                            <color key="textColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                         <separator alignment="left" id="hdS-nN-aiu"/>
-                        <button width="1" alignment="left" title="Confirmar" id="iJC-xM-Wnt">
-                            <color key="backgroundColor" red="0.0" green="0.70610400880000002" blue="0.00021615523780000001" alpha="0.82000000000000006" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="confirmar" destination="pfW-BZ-V7k" id="KCh-wS-4qm"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Modificar" id="OHX-iO-ixU">
-                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.63" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="modificar" destination="pfW-BZ-V7k" id="f70-i5-zK6"/>
-                            </connections>
-                        </button>
+                        <label alignment="left" text="¿Confirma su pedido?" numberOfLines="2" id="Qyt-Cg-91G"/>
+                        <group width="1" alignment="left" id="NQp-j3-w9t">
+                            <items>
+                                <button width="0.40000000000000002" alignment="center" verticalAlignment="center" title="OK" id="iJC-xM-Wnt">
+                                    <color key="backgroundColor" red="0.0" green="0.70610400880000002" blue="0.00021615523780000001" alpha="0.82000000000000006" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="confirmar" destination="pfW-BZ-V7k" id="KCh-wS-4qm"/>
+                                    </connections>
+                                </button>
+                                <button width="0.59999999999999998" alignment="center" verticalAlignment="center" title="Modificar" id="OHX-iO-ixU">
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.63" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="modificar" destination="pfW-BZ-V7k" id="f70-i5-zK6"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="receta" destination="odC-Zg-yGu" id="FQ4-9e-mxL"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="260" y="599"/>
+            <point key="canvasLocation" x="260" y="576"/>
         </scene>
         <!--SelectSizeViewController-->
         <scene sceneID="9TS-lI-WBH">
@@ -156,7 +215,9 @@
                                 <action selector="selectionSize:" destination="2OU-gY-ErR" id="CoR-aN-5S0"/>
                             </connections>
                         </slider>
-                        <label alignment="center" text="Label" textAlignment="center" id="tm9-E6-08q"/>
+                        <label alignment="center" text="Label" textAlignment="center" id="tm9-E6-08q">
+                            <color key="textColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Continuar" id="6J6-Yb-Xy9">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,6 +228,7 @@
                     </items>
                     <connections>
                         <outlet property="sizeSelected" destination="tm9-E6-08q" id="Kyp-cJ-A7C"/>
+                        <outlet property="sizeSelector" destination="dHo-Lh-PUq" id="ElZ-RD-w5t"/>
                     </connections>
                 </controller>
             </objects>
@@ -184,7 +246,9 @@
                                 <action selector="selectionSize:" destination="l90-Ld-CcC" id="15u-wZ-j6h"/>
                             </connections>
                         </slider>
-                        <label alignment="center" text="Label" id="Lxu-mE-7fK"/>
+                        <label alignment="center" text="Label" id="Lxu-mE-7fK">
+                            <color key="textColor" red="0.90980392160000001" green="0.52549019610000003" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Continuar" id="h79-RV-dvD">
                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -194,6 +258,7 @@
                     </items>
                     <connections>
                         <outlet property="masaSelected" destination="Lxu-mE-7fK" id="VKl-jZ-cTE"/>
+                        <outlet property="masaSelector" destination="j8T-1f-6K5" id="K1G-Qc-t17"/>
                     </connections>
                 </controller>
             </objects>

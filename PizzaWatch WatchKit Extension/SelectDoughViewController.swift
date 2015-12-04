@@ -12,6 +12,7 @@ import WatchKit
 class SelectDoughViewController: WKInterfaceController {
 
     @IBOutlet var masaSelected: WKInterfaceLabel!
+    @IBOutlet var masaSelector: WKInterfaceSlider!
     var pizza: Pizza!
     
     
@@ -34,8 +35,13 @@ class SelectDoughViewController: WKInterfaceController {
         
         if context != nil {
             pizza = context as! Pizza
-            masaSelected.setText(Pizza.Masa.Delgada.rawValue)
-            pizza.masa = Pizza.Masa.Delgada
+            if pizza.masa != nil {
+                masaSelector.setValue(Float(pizza.masa!.hashValue) + 1)
+                masaSelected.setText(pizza.masa?.rawValue)
+            } else {
+                masaSelected.setText(Pizza.Masa.Delgada.rawValue)
+                pizza.masa = Pizza.Masa.Delgada
+            }
         }
     }
     

@@ -12,6 +12,7 @@ import WatchKit
 class SelectSizeViewController: WKInterfaceController {
     
     @IBOutlet var sizeSelected: WKInterfaceLabel!
+    @IBOutlet var sizeSelector: WKInterfaceSlider!
     var pizza: Pizza!
     
     
@@ -34,8 +35,13 @@ class SelectSizeViewController: WKInterfaceController {
         
         if context != nil {
             pizza = context as! Pizza
-            sizeSelected.setText(Pizza.Tam.Chica.rawValue)
-            pizza.tamaño = Pizza.Tam.Chica
+            if pizza.tamaño != nil {
+                sizeSelector.setValue(Float(pizza.tamaño!.hashValue) + 1)
+                sizeSelected.setText(pizza.tamaño?.rawValue)
+            } else {
+                sizeSelected.setText(Pizza.Tam.Chica.rawValue)
+                pizza.tamaño = Pizza.Tam.Chica
+            }
         }
     }
     

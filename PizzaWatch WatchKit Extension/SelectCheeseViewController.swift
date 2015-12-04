@@ -12,24 +12,31 @@ import WatchKit
 class SelectCheeseViewController: WKInterfaceController {
 
     @IBOutlet var quesoSelected: WKInterfaceLabel!
-    @IBOutlet var cheesePicker: WKInterfacePicker!
     var pizza: Pizza!
     
     
-    @IBAction func selectionCheese(value: Int) {
-        switch value {
-        case 1:
-            pizza.queso = Pizza.Queso.SinQueso
-        case 2:
-            pizza.queso = Pizza.Queso.Parmesano
-        case 3:
-            pizza.queso = Pizza.Queso.Mozarella
-        case 4:
-            pizza.queso = Pizza.Queso.Cheddar
-        default:
-            break
-        }
+    @IBAction func btnSinqueso() {
+        pizza.queso = Pizza.Queso.SinQueso
         quesoSelected.setText(pizza.queso?.rawValue)
+        quesoSelected.setTextColor(UIColor.orangeColor())
+    }
+    
+    @IBAction func btnParmesano() {
+        pizza.queso = Pizza.Queso.Parmesano
+        quesoSelected.setText(pizza.queso?.rawValue)
+        quesoSelected.setTextColor(UIColor.orangeColor())
+    }
+    
+    @IBAction func btnMozarella() {
+        pizza.queso = Pizza.Queso.Mozarella
+        quesoSelected.setText(pizza.queso?.rawValue)
+        quesoSelected.setTextColor(UIColor.orangeColor())
+    }
+    
+    @IBAction func btnCheddar() {
+        pizza.queso = Pizza.Queso.Cheddar
+        quesoSelected.setText(pizza.queso?.rawValue)
+        quesoSelected.setTextColor(UIColor.orangeColor())
     }
     
     override func awakeWithContext(context: AnyObject?) {
@@ -37,37 +44,19 @@ class SelectCheeseViewController: WKInterfaceController {
         
         if context != nil {
             pizza = context as! Pizza
-            quesoSelected.setText(Pizza.Queso.SinQueso.rawValue)
-            pizza.queso = Pizza.Queso.SinQueso
+            if pizza.queso != nil {
+                quesoSelected.setText(pizza.queso!.rawValue)
+            }
         }
-        
-        cheesePicker.setItems(cheesePickerDataSource())
     }
     
     @IBAction func siguiente() {
-        pushControllerWithName("SelectAdmisturesViewController", context: pizza)
-    }
-    
-    func cheesePickerDataSource() -> [WKPickerItem] {
-        var items = [WKPickerItem]()
-        
-        let sinQueso = WKPickerItem()
-        sinQueso.title = "SinQueso"
-        items.append(sinQueso)
-        
-        let parmesano = WKPickerItem()
-        sinQueso.title = "Parmesano"
-        items.append(parmesano)
-        
-        let mozarella = WKPickerItem()
-        sinQueso.title = "Mozarella"
-        items.append(mozarella)
-        
-        let cheddar = WKPickerItem()
-        sinQueso.title = "Cheddar"
-        items.append(cheddar)
-        
-        return items
+        if pizza.queso != nil {
+            pushControllerWithName("SelectAdmisturesViewController", context: pizza)
+        } else {
+            quesoSelected.setText("por favor, seleccione el tipo de queso")
+            quesoSelected.setTextColor(UIColor.redColor())
+        }
     }
     
 }

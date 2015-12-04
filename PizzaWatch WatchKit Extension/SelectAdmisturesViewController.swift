@@ -11,6 +11,16 @@ import WatchKit
 
 class SelectAdmisturesViewController: WKInterfaceController {
 
+    @IBOutlet var switchJamon: WKInterfaceSwitch!
+    @IBOutlet var switchPeperoni: WKInterfaceSwitch!
+    @IBOutlet var switchPavo: WKInterfaceSwitch!
+    @IBOutlet var switchSalchicha: WKInterfaceSwitch!
+    @IBOutlet var switchAceituna: WKInterfaceSwitch!
+    @IBOutlet var switchCebolla: WKInterfaceSwitch!
+    @IBOutlet var switchPimiento: WKInterfaceSwitch!
+    @IBOutlet var switchPiña: WKInterfaceSwitch!
+    @IBOutlet var switchAnchoa: WKInterfaceSwitch!
+    
     var pizza: Pizza!
     
     
@@ -92,6 +102,33 @@ class SelectAdmisturesViewController: WKInterfaceController {
         
         if context != nil {
             pizza = context as! Pizza
+            if pizza.ingredientes[0] != nil {
+                switchJamon.setOn(true)
+            }
+            if pizza.ingredientes[1] != nil {
+                switchPeperoni.setOn(true)
+            }
+            if pizza.ingredientes[2] != nil {
+                switchPavo.setOn(true)
+            }
+            if pizza.ingredientes[3] != nil {
+                switchSalchicha.setOn(true)
+            }
+            if pizza.ingredientes[4] != nil {
+                switchAceituna.setOn(true)
+            }
+            if pizza.ingredientes[5] != nil {
+                switchCebolla.setOn(true)
+            }
+            if pizza.ingredientes[6] != nil {
+                switchPimiento.setOn(true)
+            }
+            if pizza.ingredientes[7] != nil {
+                switchPiña.setOn(true)
+            }
+            if pizza.ingredientes[8] != nil {
+                switchAnchoa.setOn(true)
+            }
         }
     }
     
